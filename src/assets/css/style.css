@@ -1,0 +1,718 @@
+@import 'https://fonts.googleapis.com/css?family=Lora:400,400i,700|Raleway:300,600,700,900';
+@import 'https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+/*Global Settings*/
+body{
+	font-family: 'Lora', serif;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	font-weight: 2000;
+	color: #000000;
+	margin-bottom: 35px;
+	margin-top: 0;
+}
+h1{
+	font-size: 45px;
+}
+h2{
+	font-size: 32px;
+}
+h3{
+	font-size: 21px;
+}
+p{
+	font-size: 16px;
+	font-style: italic;
+	color: #818181;
+}
+a{
+	transition: all 0.3s ease-in-out;
+}
+section{
+	text-align: center;
+}
+.blockquote p{
+	font-size: 32px;
+	line-height: 45px;
+	padding-left: 30px;
+	border-left: 3px solid #424242;
+	color: #424242;
+}
+
+.title{
+	position: relative;
+	margin-bottom: 100px;
+}
+.title:after{
+	content: '';
+	height: 5px;
+	width: 40px;
+	background-color: #62aa94;
+	position: absolute;
+	top: 81px;
+	left: calc(50% - 20px);
+}
+
+/*Bootstrap*/
+.navbar-ubutia{
+	background-image: none;
+	background-color: transparent;
+	margin-bottom: 0;
+	border-radius: 0;
+	border-color: transparent;
+	transition: all 0.3s ease-in-out;
+}
+.form-control option{
+	color: #424242;
+}
+.form-control{
+	border-radius: 0;
+	padding: 25px;
+    font-size: 18px;
+    font-style: italic;
+    background-color: transparent;
+    color: #424242;
+    margin-bottom: 30px;
+	border-color: #51c2b9;
+}
+.form-control:focus{
+	border-color: #51c2b9;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(81, 194, 185, 0.6);
+}
+.form-control::-webkit-input-placeholder {
+    color: #fff;
+}
+.form-control:-moz-placeholder { /* Firefox 18- */
+    color: #fff;  
+}
+.form-control::-moz-placeholder {  /* Firefox 19+ */
+    color: #fff;  
+}
+.form-control:-ms-input-placeholder {  
+    color: #fff;  
+}
+
+.element .form-control::-webkit-input-placeholder {
+    color: #424242;
+}
+.element .form-control:-moz-placeholder { /* Firefox 18- */
+    color: #424242;  
+}
+.element .form-control::-moz-placeholder {  /* Firefox 19+ */
+    color: #424242;  
+}
+.element .form-control:-ms-input-placeholder {  
+    color: #424242;  
+}
+
+
+
+
+/*Helper class*/
+.mt80{
+	margin-top: 80px;
+}
+.mb80{
+	margin-bottom: 80px;
+}
+.mr60{
+	margin-right: 60px;
+}
+.bg-img{
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.bg-img div{
+	z-index: 1;
+	position: relative;
+}
+.bg-img:after{
+	position: absolute;
+	content: '';
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	left: 0;
+	top: 0;
+}
+.section{
+	padding: 100px 0;
+}
+.ubutia-icon{
+	background:transparent url(../images/logo.png) no-repeat;
+    width: 350px;
+    height: 100px;
+	display:block;
+}
+.graphic-design{
+	background:transparent url(../images/graphic-design.png) no-repeat;
+	margin-top: 30px;
+    width: 200px;
+    height: 200px;
+	display:block;
+}
+.webdevelopment{
+	background:transparent url(../images/webdevelopment.png) no-repeat;
+    width: 200px;
+    height: 200px;
+	display:block;
+}
+.printing{
+	background:transparent url(../images/printing.png) no-repeat;
+    width: 200px;
+    height: 200px;
+	display:block;
+}
+.play-icon{
+	background:transparent url(../images/video-play-icon.png) no-repeat;
+    width: 70px;
+    height: 69px;
+	display:block;
+}
+.Lottogif{
+	background:transparent url(../images/lotto.gif) no-repeat;
+    width: 512px;
+    height: 512px;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.Lotto00{
+	background:transparent url(../images/00.png) no-repeat;
+    width: 200px;
+    height: 200px;
+	display:block;
+}
+
+.Lotto01{
+	background:transparent url(../images/01.png) no-repeat;
+    width: 200px;
+    height: 200px;
+	display:block;
+}
+
+.Lotto02{
+	background:transparent url(../images/02.png) no-repeat;
+    width: 200px;
+    height: 200px;
+	display:block;
+}
+
+.Lotto03{
+	background:transparent url(../images/03.png) no-repeat;
+    width: 200px;
+    height: 200px;
+	display:block;
+}
+
+.Lotto04{
+	background:transparent url(../images/04.png) no-repeat;
+    width: 200px;
+    height: 200px;
+	display:block;
+}
+
+.Lotto05{
+	background:transparent url(../images/05.png) no-repeat;
+    width: 200px;
+    height: 200px;
+	display:block;
+}
+
+.Lotto06{
+	background:transparent url(../images/06.png) no-repeat;
+    width: 200px;
+    height: 200px;
+	display:block;
+}
+
+.Lotto07{
+	background:transparent url(../images/07.png) no-repeat;
+    width: 200px;
+    height: 200px;
+	display:block;
+}
+
+.Lotto08{
+	background:transparent url(../images/08.png) no-repeat;
+    width: 200px;
+    height: 200px;
+	display:block;
+}
+
+.Lotto09{
+	background:transparent url(../images/09.png) no-repeat;
+    width: 200px;
+    height: 200px;
+	display:block;
+}
+
+/*ubutia Card*/
+.ubutia-card{
+	text-align: center;
+	/*margin-bottom: 45px;*/
+}
+.ubutia-card .ubutia-card-header{
+	margin-bottom: 45px;
+}
+.ubutia-card .ubutia-card-header .card-icon{
+	border-radius: 100%;
+	display: inline-block;
+	height: 80px;
+	width: 100px;
+	line-height: 120px;
+	position: relative;
+}
+
+
+/*Button*/
+.ubutia-btn{
+	border-color: #000000;
+	font-style: italic;
+	color: #000000;
+	border-radius: 0;
+	letter-spacing: 3px;
+	padding: 15px 80px;
+	margin-bottom: 30px;
+	background-color: transparent;
+	t
+}
+.ubutia-btn:hover{
+	background-color: #e24343;
+	color: #fff;
+}
+.solid{
+	background-color: #000000;
+	color: #fff;
+}
+.solid:hover{
+	background-color: #fff;
+	color: #000000;
+}
+.small-btn{
+	padding: 10px 130px;
+}
+
+/*Element page*/
+.element .navigation-bar{
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.element .navigation-bar a{
+	color: #424242;
+}
+.element .dark-bar{
+	background-color: #fff;
+}
+.element .menu:after{
+	color: #424242;
+}
+.element .title:after{
+	left: 0;
+	top: 60px;
+}
+.headings p{
+	margin-bottom: 80px;
+}
+.social-icons ul{
+	text-align: center;
+	padding-left: 0;
+	display: inline-block;
+}
+.social-icons ul a li{
+	display: inline-block;
+	list-style-type: none;
+    border: 2px solid #51c2b9;
+    margin-right: 10px;
+    background-color: #51c2b9;
+    color: #fff;
+	font-size: 18px;
+    line-height: 32px;
+    width: 36px;
+}
+.social-icons ul a li:last-child{
+	margin-right: 0;
+}
+.social-icons ul a:hover li{
+	color: #51c2b9;
+	background-color: #fff;
+}
+
+
+
+
+
+
+
+
+/*Navigation*/
+#menu-item{
+	transition: all 0.3s ease-in-out;
+}
+.menu-item{
+	background-color: #1a1a1a;
+	text-align: center;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.menu-item ul{
+	padding-left: 0;
+	margin-bottom: 0;
+}
+.menu-item ul a li{
+	padding: 15px 0;
+	list-style-type: none;
+	color: #fff;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.menu-item ul a:hover li{
+	color: #51c2b9;
+	text-decoration: none;
+}
+.hide-menu{
+	margin-top: -377px;
+}
+.show-menu{
+	margin-top: 0;
+}
+.dark-bar{
+	background-color: #ffffff;
+	background-image: none;
+}
+.navigation-bar{
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	padding: 15px 0;
+	font-size: 30px;
+}
+.navigation-bar a{
+	color: #fff;
+}
+.menu{
+	position: relative;
+	display: inline-block;
+}
+
+.menu:after{
+	position: absolute;
+	left: -65px;
+	top: 10px;
+	color: #fff;
+	font-size: 16px;
+}
+.m:after{
+	content: 'MENU';
+}
+.c:after{
+	content: 'CLOSE';
+}
+
+
+/*Home page*/
+.header{
+	background-image: url(../images/1.png);
+	height: 100vh;
+	position: relative;
+	min-height: 659px;
+}
+
+.intro-box{
+	height: 100vh;
+	display: table;
+	text-align: center;
+	width: 100%;
+}
+.intro{
+	display: table-cell;
+	vertical-align: middle;
+}
+.header h1{
+	margin: 0;
+}
+.header h1, .header p{
+	color: #fff;
+	letter-spacing: 2px;
+}
+.header p{
+	font-size: 32px;
+	padding-top: 0;
+	padding-bottom: 40px;
+}
+.header .ubutia-btn{
+	border-color: #fff;
+	color: #fff;
+}
+.header .ubutia-btn:hover{
+	background-color: #fff;
+	color: #ffffff;
+}
+
+.about{
+	background-color: #f8f8f8;
+}
+.about img{
+	margin: 30px auto;
+	display: block;
+}
+.about span{
+	font-family: 'Raleway';
+	font-weight: 600;
+}
+
+.expert{
+	background-color: #f8f8f8;
+}
+.expert p{
+	line-height: 200%;
+}
+.expert .bg-img{
+	background-image: url(../images/2.jpg);
+	background-position-x: 85%;
+	height: 100%;
+}
+.expert .bg-img:after{
+	display: none;
+}
+.expert .section{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+
+.ubutia-quote{
+	background-image: url(../images/3.jpg);
+	/*padding: 120px 0;*/
+	color: #fff;
+	font-style: italic;
+}
+.ubutia-quote p{
+	font-size: 32px;
+	color: #fff;
+}
+.ubutia-quote .quote{
+	margin-bottom: 40px;
+}
+.ubutia-quote .author{
+	font-size: 21px;
+	margin-bottom: 40px;
+}
+.watch{
+	background-image: url(../images/7.jpg);
+	font-style: italic;
+	font-size: 32px;
+	color: #fff;
+	padding: 150px 0;
+}
+.watch a{
+	border: 2px solid #fff;
+	margin-left: 10px;
+	margin-right: 10px;
+	line-height: 70px;
+	border-radius: 100%;
+	width: 70px;
+	height: 70px;
+	padding: 0;
+	font-size: 21px;
+	color: #fff;
+}
+.watch a:hover, .watch a:active, .watch a:focus{
+	background-color: #fff;
+	color: #424242;
+}
+
+.subscribe{
+	background-image: url(../images/11.jpg);
+}
+.subscribe .ubutia-btn{
+	margin-bottom: 0;
+	color: #424242;
+	font-weight: 700;
+	border-color: #fff;
+	background-color: #fff;
+}
+.subscribe .ubutia-btn:hover{
+	background-color: transparent;
+	color: #fff;
+}
+.subscribe p{
+	color: #fff;
+	font-size: 32px;
+	margin-bottom: 35px;
+}
+.subscribe .form-control{
+    width: 320px;
+    margin-bottom: 0;
+    border-color: #fff;
+    color: #fff;
+}
+
+.contact .ubutia-card{
+	background-color: #f8f8f8;
+	padding: 35px 0;
+	transition: all 0.3s ease-in-out;
+	margin-bottom: 45px;
+}
+/*.contact .ubutia-card:hover{
+	box-shadow: 0px 4px 2px rgba(17, 17, 17, 0.3);
+}*/
+.contact .ubutia-card .ubutia-card-header{
+	margin-bottom: 15px;
+	font-size: 21px;
+	color: #51c2b9;
+}
+.contact .ubutia-card .ubutia-card-content h3{
+	letter-spacing: 2px;
+	margin-bottom: 45px;
+}
+.contact .ubutia-card .ubutia-card-content h3:after{
+	top: 40px;
+}
+.contact .ubutia-card .ubutia-card-content p{
+	font-size: 18px;
+}
+.footer{
+	background-color: #202020;
+	text-align: center;
+	padding: 60px 0;
+}
+.footer span{
+	color: #51c2b9;
+}
+.footer p{
+	font-size: 21px;
+	color: #fff;
+	margin-bottom: 0;
+}
+.footer a{
+	color: #fff;
+}
+
+
+
+
+/*animations*/
+.ubutia-card .ubutia-card-header .card-icon:after{
+	transition: all 0.3s ease-in-out;
+}
+.ubutia-card:hover .ubutia-card-header .card-icon:after{
+	height: 120px;
+	width: 120px;
+	top: -1px;
+	left: -1px;
+}
+.owl-theme .owl-dots .owl-dot span{
+	background-color: #51c2b9;
+	margin: 5px;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+	background-color: #51c2b9;
+	height: 14px;
+	width: 14px;
+	margin: 3px;
+}
+
+
+.form-style-8{
+	font-family: 'Open Sans Condensed', arial, sans;
+	width: 500px;
+	padding: 30px;
+	background: #FFFFFF;
+	margin: 50px auto;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+
+}
+.form-style-8 h2{
+	background: #4D4D4D;
+	text-transform: uppercase;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #797979;
+	font-size: 18px;
+	font-weight: 100;
+	padding: 20px;
+	margin: -30px -30px 30px -30px;
+}
+.form-style-8 input[type="text"],
+.form-style-8 input[type="date"],
+.form-style-8 input[type="datetime"],
+.form-style-8 input[type="email"],
+.form-style-8 input[type="number"],
+.form-style-8 input[type="search"],
+.form-style-8 input[type="time"],
+.form-style-8 input[type="url"],
+.form-style-8 input[type="password"],
+.form-style-8 textarea,
+.form-style-8 select 
+{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	outline: none;
+	display: block;
+	width: 100%;
+	padding: 7px;
+	border: none;
+	border-bottom: 1px solid #ddd;
+	background: transparent;
+	margin-bottom: 10px;
+	font: 16px Arial, Helvetica, sans-serif;
+	height: 45px;
+}
+.form-style-8 textarea{
+	resize:none;
+	overflow: hidden;
+}
+.form-style-8 input[type="button"], 
+.form-style-8 input[type="submit"]{
+	-moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+	box-shadow: inset 0px 1px 0px 0px #45D6D6;
+	background-color: #2CBBBB;
+	border: 1px solid #27A0A0;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 14px;
+	padding: 8px 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.form-style-8 input[type="button"]:hover, 
+.form-style-8 input[type="submit"]:hover {
+	background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
+	background-color:#34CACA;
+}
+.well {
+    background: none;
+	height: 320px;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+
+.table-scroll tbody {
+    position: absolute;
+    overflow-y: scroll;
+    height: 250px;
+}
+
+.table-scroll tr {
+    width: 100%;
+    table-layout: fixed;
+    display: inline-table;
+}
+
+.table-scroll thead > tr > th {
+    border: none;
+}
+
+
+
+
+
+@media (max-width: 767px){
+	.ubutia-card{
+		margin-bottom: 60px;
+	}
+}
