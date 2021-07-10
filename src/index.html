@@ -1,0 +1,374 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>WINLOTTERY | DECENTRALIZED LOTTERY PLATFORM</title>
+<!--
+Stacked Template
+https://templatemo.com/tm-505-stacked
+-->
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav class="nav">
+          <div class="burger">
+            <div class="burger__patty"></div>
+          </div>
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#1" class="nav__link c-blue"><img src="img/home-icon.png" alt=""></a>
+            </li>
+            <li class="nav__item">
+              <a href="#2" class="nav__link c-yellow scrolly"><img src="img/buy-icon.png" alt=""></a>
+            </li>
+            <li class="nav__item">
+              <a href="#3" class="nav__link c-red"><img src="img/reward-icon.png" alt=""></a>
+            </li>
+            <li class="nav__item">
+              <a href="#4" class="nav__link c-green"><img src="img/wallet-icon.png" alt=""></a>
+            </li>
+          </ul>
+        </nav>
+
+        <section class="panel b-blue" id="1">
+          <article class="panel__wrapper">
+            <div class="panel__content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8 col-md-offset-2">
+                    <div class="home-content">
+                        
+                      <div class="connect-textbox" > 
+                        <a id="WalletAddress">0000...0000</a>
+                      </div> 
+                      <div class="connect-button" > 
+                        <a> My Wallet address :</a>
+                      </div>  
+                        <img src="img/long_logo.png" alt="">
+                        
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="home-box-content">
+                            <div class="left-text">
+                              <h4>TOTAL<em>REWARD</em></h4>
+                              <p id="TotalReward">000000</p>
+                              <div class="primary-button">
+                                <a href="#2">BUY LOTTERY</a>
+                              </div> 
+                           </ul>
+                            </div>
+                            <div class="right-image">
+                              <img src="img/sq_logo.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <ul class="countdown">
+                        <li>
+                             <span class="days">14</span>
+                             <h5>Days</h3>
+                        </li>
+                        <li>
+                             <span class="hours">10</span>
+                             <h5>hours</h3>
+                        </li>
+                        <li>
+                             <span class="minutes">15</span>
+                             <h5>minutes</h3>
+                        </li>
+                        <li>
+                             <span class="seconds">34</span>
+                             <h5>seconds</h3>
+                        </li>    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="panel b-yellow" id="2">
+          <article class="panel__wrapper">
+            <div class="panel__content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8 col-md-offset-2">
+                    <div class="about-content">
+                      <div class="heading">
+                        <h4>BUY LOTTERY</h4>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="about-box-content">
+                            <img src="img/about-image.png" alt="">
+                          </div>
+                        </div>
+                        <div class="col-md-7 col-md-offset-5">
+                          <div class="about-box-text">
+                            <h4>Round #2</h4> <h4>[jul 16,2021]</h4>
+                            <form id="BuyLotto" action="" method="post">
+                              <h4>Lottery Number</h4>
+                                <input name="name" type="number" class="form-control" id="LottoNumber"  maxlength="1" min="0" max="99" required="" placeholder="00-99">
+                               </br>
+                               <h4>AMOUNT </h4>
+                                <input name="name" type="number" class="form-control" id="Amount" min="0"  placeholder="0.00" required="">
+                              <p id="WalletBalanace">0.00</p> <p>balanace :  </p>
+                            </br>
+                            </form>
+                            <div class="primary-button" id="BuyButton">
+                              <a>BUY</a>
+
+                              <h2 id="Buyreslut"></h2>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="panel b-red" id="3">
+          <article class="panel__wrapper">
+            <div class="panel__content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8 col-md-offset-2">
+                    <div class="projects-content">
+                      <div class="heading">
+                        <h4>PRIZES</h4>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="owl-carousel owl-theme projects-container">
+                            <div>
+                              <div class="project-item">
+                                <a href="img/project-item-01.png" data-lightbox="image-1"><img src="img/project-item-01.png" alt=""></a>
+                                <div class="text-content">
+                                  <h5>Round #1 [jul 01,2021]</h5><h4>WINNING NUMBER</h4>
+                                  <p > GOLDEN = <em2 id="GoldenNumber">--</em2></p>
+                                  <p > MINI = <em3 id="MiniNumber">--</em3></p>
+                                 
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="project-item">
+                                <a href="img/project-item-02.png" data-lightbox="image-1"><img src="img/project-item-02.png" alt=""></a>
+                                <div class="text-content">
+                                  <h4>GOLDEN JACKPOT</h4>
+                                  <p> GOLDEN = <em id="GoldenNumber2">--</em></p>
+                                  <p> prize = <em id="GoldenPrize">--</em></p>
+                                  <p> winner = <em  id="GoldenWinner">--</em></p>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="project-item">
+                                <a href="img/project-item-03.png" data-lightbox="image-1"><img src="img/project-item-03.png" alt=""></a>
+                                <div class="text-content">
+                                  <h4>MINI JACKPOT #1</h4>
+                                  <p> MINI = <em3 id="MiniNumber2">--</em></p>
+                                  <p> prize = <em3 id="MiniPrize">--</em></p>
+                                  <p> winner = <em3  id="MiniWinner">--</em></p>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="project-item">
+                                <div class="text-content">
+                                  <h4>Sale</h4>
+                                  <p> Buy lottery to win Golden or mini prizes,<br> also get cash back. 
+                                    Start your playing in this platform to win!
+
+                                  </p>
+                                </br>
+                                  <div class="primary-button">
+                                    <a href="#2">Click here!</a>
+                                  </div>
+                                
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="panel b-green" id="4">
+          <article class="panel__wrapper">
+            <div class="panel__content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8 col-md-offset-2">
+                    <div class="contact-content">
+                      <div class="heading">
+                        <h4>WALLET</h4>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-8">
+                          <div class="contat-form">
+                            <form id="contact" action="" method="post">
+                              <h1>WITHDRAW BALANACE</h1>
+                              <h2 id="WithdrawBalance">0.00</h2>
+                              <div class="primary-button" id="WithdrawButton">
+                                <a>Withdraw</a>
+                              </div>
+                              <h2 id="Withdrawreslut"></h2>
+                            </form>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="more-info">
+                            <p >Locked amount : <em2 id="LockBalance">0.00</em></p>	<br>
+								<br><em>100% of your Cashback are locked and available after Next lottery round has done.</em></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="footer">
+                      <p>Copyright &copy; 2021 WINLOTTERY 
+                      | Design by TemplateMo</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+
+        <section class="panel b-green" id="5">
+          <article class="panel__wrapper">
+            <div class="panel__content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8 col-md-offset-2">
+                    <div class="contact-content2">
+                      <div class="heading">
+                        <h4>[Staff Only]</h4>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-11">
+                          <div class="contat-form">
+                            <form id="BuyLotto" action="" method="post">
+                              <h5>รางวัลใหญ่</h5>
+                                <input name="name" type="number" class="form-control" id="InputGoldNumber"   min="0" max="99" required="" placeholder="00-99">
+                               </br>
+                            </form>
+                            <div class="primary-button" id="GoldButton">
+                              <a>reward</a>
+                            </div>
+                          </br>
+                          </br>
+                            <form id="BuyLotto" action="" method="post">
+                              <h5>รางวัลเล็ก</h5>
+                                <input name="name" type="number" class="form-control" id="InputMiniNumber"  min="0" max="99" required="" placeholder="00-99">
+                            </br>
+                            </form>
+                            <div class="primary-button" id="MiniButton">
+                              <a>reward</a>
+                            </div>
+                            </br>  
+                            </br>
+                            <form id="BuyLotto" action="" method="post">
+                              <h5>ปลดล็อกเงินในกระเป๋าเงิน</h5>
+                            </br>
+                            </form>
+                            <div class="primary-button" id="UnlockButton">
+                              <a>UnLock</a>
+                            </div>
+                          </br>  
+                        </br>
+
+                            <form id="BuyLotto" action="" method="post">
+                              <h5>SET Withdraw</h5>
+                                <input name="name" type="number" class="form-control" id="Inputset1"  >
+                            </br>
+                            </form>
+                            <div class="primary-button" id="set1Button">
+                              <a>set</a>
+                            </div>
+                            </br>  
+                            </br>
+
+                            <form id="BuyLotto" action="" method="post">
+                              <h5>SET Lock</h5>
+                                <input name="name" type="number" class="form-control" id="Inputset2"  >
+                            </br>
+                            </form>
+                            <div class="primary-button" id="set2Button">
+                              <a>set</a>
+                            </div>
+                            </br>  
+                            </br>
+
+                            <form id="BuyLotto" action="" method="post">
+                              <h5>SET Total value</h5>
+                                <input name="name" type="number" class="form-control" id="Inputset3"  >
+                            </br>
+                            </form>
+                            <div class="primary-button" id="set3Button">
+                              <a>set</a>
+                            </div>
+                            </br>  
+                            </br>
+                            
+                                
+                          </div>
+                        </div>
+                        
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+      
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/init.js"></script>
+        <script src="js/countdown.js"></script>
+        <script src="js/init.js"></script>
+  
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/web3.min.js"></script>
+        <script src="js/truffle-contract.js"></script>
+        <script src="js/app.js"></script>
+        
+    </body>
+</html>
